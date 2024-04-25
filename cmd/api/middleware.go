@@ -182,8 +182,9 @@ func (app *application) requirePermission(code string, next http.HandlerFunc) ht
 
 func (app *application) enableCORS(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// The vary header is used to tell any caching server that the response will
+		// vary depending on the value of the Origin and Access-Control-Request-Method headers.
 		w.Header().Add("Vary", "Origin")
-
 		w.Header().Add("Vary", "Access-Control-Request-Method")
 
 		origin := r.Header.Get("Origin")
