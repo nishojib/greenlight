@@ -13,10 +13,11 @@ import (
 	"sync"
 	"time"
 
+	"nishojib/greenlight/internal/data"
+	"nishojib/greenlight/internal/mailer"
+	"nishojib/greenlight/internal/vcs"
+
 	_ "github.com/lib/pq"
-	"greenlight.nishojib.com/internal/data"
-	"greenlight.nishojib.com/internal/mailer"
-	"greenlight.nishojib.com/internal/vcs"
 )
 
 var version = vcs.Version()
@@ -86,7 +87,7 @@ func main() {
 	flag.StringVar(
 		&cfg.smtp.sender,
 		"smtp-sender",
-		"Greenlight <no-reply@greenlight.nishojib.com>",
+		"Greenlight <no-reply@nishojib/greenlight>",
 		"SMTP sender",
 	)
 

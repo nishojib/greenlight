@@ -7,8 +7,9 @@ import (
 	"fmt"
 	"time"
 
+	"nishojib/greenlight/internal/validator"
+
 	"github.com/lib/pq"
-	"greenlight.nishojib.com/internal/validator"
 )
 
 type Movie struct {

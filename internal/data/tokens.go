@@ -8,7 +8,7 @@ import (
 	"encoding/base32"
 	"time"
 
-	"greenlight.nishojib.com/internal/validator"
+	"nishojib/greenlight/internal/validator"
 )
 
 const (

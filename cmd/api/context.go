@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"greenlight.nishojib.com/internal/data"
+	"nishojib/greenlight/internal/data"
 )
 
 type contextKey string

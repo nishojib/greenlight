@@ -10,8 +10,9 @@ import (
 	"strconv"
 	"strings"
 
+	"nishojib/greenlight/internal/validator"
+
 	"github.com/julienschmidt/httprouter"
-	"greenlight.nishojib.com/internal/validator"
 )
 
 func (app *application) readIDParam(r *http.Request) (int64, error) {

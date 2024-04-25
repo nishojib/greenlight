@@ -7,8 +7,9 @@ import (
 	"errors"
 	"time"
 
+	"nishojib/greenlight/internal/validator"
+
 	"golang.org/x/crypto/bcrypt"
-	"greenlight.nishojib.com/internal/validator"
 )
 
 var (

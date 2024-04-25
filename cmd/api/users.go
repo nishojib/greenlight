@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"greenlight.nishojib.com/internal/data"
-	"greenlight.nishojib.com/internal/validator"
+	"nishojib/greenlight/internal/data"
+	"nishojib/greenlight/internal/validator"
 )
 
 func (app *application) registerUserHandler(w http.ResponseWriter, r *http.Request) {

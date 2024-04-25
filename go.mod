@@ -1,4 +1,4 @@
-module greenlight.nishojib.com
+module nishojib/greenlight
 
 go 1.21.5
 

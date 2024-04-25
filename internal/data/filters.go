@@ -3,7 +3,7 @@ package data
 import (
 	"strings"
 
-	"greenlight.nishojib.com/internal/validator"
+	"nishojib/greenlight/internal/validator"
 )
 
 type Filters struct {
